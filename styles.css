@@ -1,1 +1,71 @@
 /* your code here */
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	overflow-x:hidden;
+}
+.content{
+	background-color:black;
+	color:white;
+	padding:25px;
+}
+.top{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin-bottom:45px;
+}
+.logo_name{
+	font-size:30px;
+}
+.media-icons{
+	display:flex;
+}
+.media-icons a{
+	margin-left:8px;
+	text-decoration:none;
+	color:#fff;
+	background-color:blue;
+	border-radius:50%;
+	padding:5px;
+}
+.link-boxes{
+	display:flex;
+	justify-content:space-between;
+	gap:15px;
+}
+.links{
+	display:flex;
+	flex-direction:column;
+	gap:5px;
+}
+.links h3{
+	text-decoration:underline;
+}
+.links a{
+	color:#a7a7a7;
+	text-decoration:none;
+}
+.bottom-details{
+	background-color:#2a292b;
+	color:#a7a7a7;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:20px;
+}
+
+@media only screen and (max-width: 320px) {
+.top{
+	flex-direction:column;
+	gap:5px;
+}
+  /* .media-icons{
+	  display:hidden;
+  } */
+.link-boxes{
+	flex-direction:column;
+	justify-content:center;
+}
+}
